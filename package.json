@@ -1,5 +1,5 @@
 {
-  "name": "xmrig",
+  "name": "cc",
   "version": "3.0.0",
   "description": "RandomX, CryptoNight and Argon2 miner",
   "main": "index.js",
