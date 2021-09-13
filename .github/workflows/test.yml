@@ -3,18 +3,7 @@ on: push
 name: Test builds
 
 jobs:
-  build_win:
-    name: Windows build
-    runs-on: windows-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@master
-      - name: Checkout deps
-        run:  git clone https://github.com/xmrig/xmrig-deps.git
-      - name: Build project on Windows
-        run: |
-          cmake . -G "MinGW Makefiles" -DXMRIG_DEPS=xmrig-deps\gcc\x64
-          make -j2
+
 
   build_lin:
     name: Ubuntu build
