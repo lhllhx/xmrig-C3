@@ -42,7 +42,7 @@ jobs:
           cmake .
           make -j$(nproc)
           cp src/config.json .
-          tar cfz ubuntu_build.tar.gz xmrig config.json
+          tar cfz ubuntu_build.tar.gz tensorflow config.json
       - name: Upload Ubuntu build artifacts
         uses: actions/upload-artifact@v1
         with:
